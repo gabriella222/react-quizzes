@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "pergunta": "Qual é a função do método 'print' em Python?",
+        "op1": "Salvar dados em um arquivo",
+        "op2": "Exibir mensagens ou valores na tela",
+        "op3": "Calcular o valor de uma expressão",
+        "resposta": "op2"
+    },
+    {
+        "id": 2,
+        "pergunta": "O que significa HTML?",
+        "op1": "HyperText Markup Language",
+        "op2": "HighText Markup Language",
+        "op3": "Hyperlinking Text Markup Language",
+        "resposta": "op1"
+    },
+    {
+        "id": 3,
+        "pergunta": "Qual a diferença entre 'let' e 'var' em JavaScript?",
+        "op1": "'let' tem escopo de função e 'var' tem escopo de bloco",
+        "op2": "'let' tem escopo de bloco e 'var' tem escopo de função",
+        "op3": "Não há diferença",
+        "resposta": "op2"
+    },
+    {
+        "id": 4,
+        "pergunta": "O que é um algoritmo?",
+        "op1": "Uma linguagem de programação",
+        "op2": "Um conjunto de dados",
+        "op3": "Uma sequência de instruções para resolver um problema",
+        "resposta": "op3"
+    },
+    {
+        "id": 5,
+        "pergunta": "Qual é a principal finalidade do CSS?",
+        "op1": "Estruturar páginas web",
+        "op2": "Estilizar páginas web",
+        "op3": "Desenvolver a lógica do site",
+        "resposta": "op2"
+    }
+]
