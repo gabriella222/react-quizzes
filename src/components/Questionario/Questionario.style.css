@@ -25,6 +25,23 @@
     background-color: #9D54EB;
 }
 
+.link-btn{
+
+    display:flex;
+    align-items: center;
+    justify-content: end;
+    gap: 25px;
+
+}
+
+.button-prev{
+    cursor: pointer;
+}
+
+.button-prev:hover{
+    color:  #AB3FF8;
+}
+
 .button-next{
 
     border: 0;
@@ -34,5 +51,5 @@
     font-size: 14px;
     padding: 10px 25px;
     cursor: pointer;
-    align-self: end;
+   
 }
