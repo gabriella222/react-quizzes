@@ -7,6 +7,7 @@ import HearderResults from './components/HeaderResults/HeaderResults'
 function App() {
 
   const [dados,setDados] = React.useState();
+  const [quizAtual, setQuizAtual] = React.useState();
 
   useEffect(()=>{
 
@@ -27,8 +28,8 @@ function App() {
 
   return (
     <>
-      <HearderResults dados={dados}/>
-      <Questionario  dados={dados}/> 
+      <HearderResults dados={dados} quizAtual={quizAtual} setQuizAtual={setQuizAtual}/>
+      <Questionario  dados={dados} setQuizAtual={setQuizAtual}/> 
 
     </>
   )

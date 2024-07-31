@@ -9,3 +9,14 @@
     color: #AEAAB4;
 
 }
+
+.container-geral{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.quiz-atual{
+    font-size: 35px;
+}

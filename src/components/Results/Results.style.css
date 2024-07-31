@@ -1,0 +1,30 @@
+.button-reset{
+    border: 0;
+    border-radius: 2px;
+    background: #9D54EB;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 35px;
+    cursor: pointer;
+    margin-top: 30px;
+   
+}
+
+.container-result{
+    margin-top: 120px;
+    text-align: center;
+    border: 1px solid #AB3FF8;
+    padding: 40px;
+}
+
+.container-result > p{
+    font-size: 18px;
+}
+
+.title-quiz-finish{
+    font-size: 30px;
+}
+
+.graph-result{
+    font-size: 50px;
+}

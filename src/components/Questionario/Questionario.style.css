@@ -13,12 +13,15 @@
     font-weight: 500;
     margin-bottom: 40px;
 }
-.responses{
+.responses, .response-select{
     display:flex;
     gap: 10px;
     border: 1px solid #411961;
     padding: 15px;
     cursor: pointer;
+}
+.response-select{
+    background: #9D54EB; 
 }
 
 .responses:hover{
