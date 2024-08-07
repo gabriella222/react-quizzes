@@ -8,6 +8,8 @@ function App() {
 
   const [dados,setDados] = React.useState();
   const [quizAtual, setQuizAtual] = React.useState();
+  const [currentQ, setCurrentQ] = React.useState(0);
+  const [showFinal, setShowFinal] = React.useState(false);
 
   useEffect(()=>{
 
@@ -28,8 +30,8 @@ function App() {
 
   return (
     <>
-      <HearderResults dados={dados} quizAtual={quizAtual} setQuizAtual={setQuizAtual}/>
-      <Questionario  dados={dados} setQuizAtual={setQuizAtual}/> 
+      <HearderResults dados={dados} quizAtual={quizAtual} setQuizAtual={setQuizAtual} currentQ={currentQ} showFinal={showFinal}/>
+      <Questionario  dados={dados} setQuizAtual={setQuizAtual} currentQ={currentQ} setCurrentQ={setCurrentQ} showFinal={showFinal} setShowFinal={setShowFinal}/> 
 
     </>
   )

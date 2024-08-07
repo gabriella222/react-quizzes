@@ -5,15 +5,35 @@ import IconSwitcher from '../IconSwitcher/IconSwitcher'
 import Results from '../Results/Results';
 import HearderResults from '../HeaderResults/HeaderResults';
 
-function Questionario({dados, setQuizAtual}) {
+function Questionario({dados, setQuizAtual, currentQ, setCurrentQ, showFinal, setShowFinal}) {
 
-  const [showFinal, setShowFinal] = React.useState(false)
+ 
   const [icon, setIcon] = React.useState(false);
   const [correctAnswser, setCorrectAnswser] = React.useState(0);
   const [wrongAnswser, setWrongAnswer] = React.useState(0);
-  const [currentQ, setCurrentQ] = React.useState(0);
   const [answerResponse, setAnswerResponse] =  React.useState();
   const [selectResponse, setSelectResponse] = React.useState(null)
+  const [time, setTime] = React.useState(10);
+
+  useEffect(()=>{
+    const timeOut = setTimeout(()=>{
+          if(time > 0){
+            setTime(time - 1)
+          }else{
+            if(currentQ !== dados.length - 1){
+              //Quando acabar o tempo, mudo para a próxima questão
+              setCurrentQ((currentQ) => currentQ + 1)
+              //Reseto o tempo para a proxima opergunta
+              setTime(10)
+              }else{
+                setShowFinal(true)
+              }
+          }
+      },1000)
+      console.log(timeOut)
+
+      return() => clearTimeout(timeOut)
+  },[time,currentQ])
 
   if(dados === undefined) return;
   let quizzes;
@@ -52,6 +72,8 @@ function Questionario({dados, setQuizAtual}) {
           setCurrentQ(0)
       }
     } 
+
+  
 
   //   if(currentQ !== dados.length - 1){
   //     setTimeout(()=>{ 

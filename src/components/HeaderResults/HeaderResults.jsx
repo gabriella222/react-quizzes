@@ -1,7 +1,7 @@
 import React from 'react'
 import './HeaderResults.style.css'
 
-function HearderResults({dados, quizAtual, setQuizAtual}) {
+function HearderResults({dados, quizAtual, setQuizAtual, currentQ, showFinal}) {
    
   return (
     <>
@@ -12,9 +12,16 @@ function HearderResults({dados, quizAtual, setQuizAtual}) {
             <p className='subtitle'>PROGRAMAÇÃO</p>
           </div>
 
-      <div className='soma'>
-            <h2 className='quiz-atual'></h2>
-      </div>
+ 
+     { !showFinal &&
+  
+        <div className='soma'>
+              <h2 className='quiz-atual'>{currentQ + 1}</h2>
+        </div>
+
+      }
+
+      
      </div>
         
     </>
