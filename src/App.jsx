@@ -30,8 +30,21 @@ function App() {
 
   return (
     <>
-      <HearderResults dados={dados} quizAtual={quizAtual} setQuizAtual={setQuizAtual} currentQ={currentQ} showFinal={showFinal}/>
-      <Questionario  dados={dados} setQuizAtual={setQuizAtual} currentQ={currentQ} setCurrentQ={setCurrentQ} showFinal={showFinal} setShowFinal={setShowFinal}/> 
+      <HearderResults 
+        dados={dados} 
+        quizAtual={quizAtual} 
+        setQuizAtual={setQuizAtual} 
+        currentQ={currentQ} 
+        showFinal={showFinal}/>
+        
+      <Questionario 
+        dados={dados} 
+        setQuizAtual={setQuizAtual} 
+        currentQ={currentQ} 
+        setCurrentQ={setCurrentQ} 
+        showFinal={showFinal} 
+        setShowFinal={setShowFinal}
+       /> 
 
     </>
   )
